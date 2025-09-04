@@ -69,12 +69,12 @@ reservation-system/
 │   ├── main/
 │   │   ├── java/org/sonja/reservation_system/
 │   │   │   ├── controller/         # REST API endpoints
+│   │   │   ├── dto/                # Data transfer objects                  
 │   │   │   ├── entities/           # JPA entities
 │   │   │   ├── exeptions/          # Handle exceptions & Custom exceptions
-│   │   │   ├── mapping/            # Object mapping utilities
-│   │   │   ├── models/            # Data transfer objects
-│   │   │   ├── repo/              # Data repositories
-│   │   │   ├── service/           # Business logic
+│   │   │   ├── Mappers/            # Object mapping utilities
+│   │   │   ├── repo/               # Data repositories
+│   │   │   ├── service/            # Business logic
 │   │   │   └── ReservationSystemApplication.java
 │   │   └── resources/
 │   │       └── application.properties
