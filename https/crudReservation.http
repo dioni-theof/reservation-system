@@ -1,0 +1,40 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+###
+POST http://localhost:8080/api/v1/reservation/geo@gmail.com/Geo07/create-reservation
+Content-Type: application/json
+
+{
+  "seats_reserved":9
+}
+###
+PUT http://localhost:8080/api/v1/reservation/dioniof@gmail.com/Geo07/update-reservation
+Content-Type: application/json
+
+{
+  "action": "INCREASE",
+  "seatsNumber": 100
+
+}
+
+###
+GET http://localhost:8080/api/v1/reservation/geo@gmail.com/all-reservation?size=2&page=0
+Content-Type: application/json
+
+###
+GET http://localhost:8080/api/v1/reservation/Dion10/all-reservation-byCode?size=2&page=0
+Content-Type: application/json
+
+###
+DELETE  http://localhost:8080/api/v1/reservation/dioniof@gmail.com/Geo07/delete-reservation
+Content-Type: application/json
+
+###
+PUT http://localhost:8080/api/v1/reservation/geo@gmail.com/Geo07/update-status
+Content-Type: application/json
+
+{
+  "statusEnum": ""
+}

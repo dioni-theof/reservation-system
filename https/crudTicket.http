@@ -1,0 +1,33 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+###
+POST http://localhost:8080/api/v1/ticket/create-ticket
+Content-Type: application/json
+
+{
+  "code":"Geo07",
+  "event_name": "theater",
+  "price": "697.90999",
+  "available_seats": 500
+}
+###
+GET http://localhost:8080/api/v1/ticket/all-tickets?size=2&page=0
+Content-Type: application/json
+###
+GET http://localhost:8080/api/v1/ticket/Geo07/get-info
+Content-Type: application/json
+###
+DELETE http://localhost:8080/api/v1/ticket/Dion10/delete-ticket
+Content-Type: application/json
+
+###
+PUT http://localhost:8080/api/v1/ticket/Dion10/update-ticket
+Content-Type: application/json
+
+{
+  "event_name": "theater",
+  "price": 97.91,
+  "available_seats": 50
+}
